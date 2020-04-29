@@ -1,0 +1,25 @@
+
+server:
+  port: 8080
+  context-path: /demo
+
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  application:
+    name: demo
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true 
+  thymeleaf: 
+    cache: false
+    
+
+logging:
+  config: classpath:logback-spring.xml 
